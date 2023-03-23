@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('CSM checkout') {
+            steps {
+                echo 'Checkout completed'
+            }
+        }
+    stage('Build') {
+            steps {
+                echo 'Build completed'
+            }
+        }
+    stage('Test') {
+            steps {
+                echo 'Test completed'
+            }
+        } 
+    stage('Deploy') {
+            steps {
+                echo 'Deploy completed'
+            }
+        }         
+    }
+}
